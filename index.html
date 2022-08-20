@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Score</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <div class="mainGrid score home">
+            <fieldset>
+                <legend onclick="changeHomeName()">Home</legend>
+                <div class="scoreBg">
+                    <p id="scoreHome">0</p>
+                </div>
+            </fieldset>
+        </div>
+        <div class="mainGrid score away">
+            <fieldset>
+                <legend onclick="changeAwayName()">Away</legend>
+                <div class="scoreBg">
+                    <p id="scoreAway">0</p>
+                </div>
+            </fieldset>
+        </div>
+        <div class="mainGrid points homePoints">
+            <button id="point1" class="point" onclick="pointHome1()">+1</button>
+            <button id="point2" class="point" onclick="pointHome2()">+2</button>
+            <button id="point3" class="point" onclick="pointHome3()">+3</button>
+        </div>
+        <div class="mainGrid points awayPoints" >
+            <button id="point1" class="point" onclick="pointAway1()">+1</button>
+            <button id="point2" class="point" onclick="pointAway2()">+2</button>
+            <button id="point3" class="point" onclick="pointAway3()">+3</button>
+        </div>
+        <div class="mainGrid reset">
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
