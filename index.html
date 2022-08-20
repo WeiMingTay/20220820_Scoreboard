@@ -1,51 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basketball Score</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/img/721ed2b8-e5b3-4636-b2c9-64df4735261b.jpeg">
-</head>
-<body>
-    <header>
-        
-    </header>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="icon"
+      href="assets/img/721ed2b8-e5b3-4636-b2c9-64df4735261b.jpeg"
+    />
+  </head>
+  <body>
+    <header></header>
     <main>
-        <div class="mainGrid score home">
-            <fieldset>
-                <legend id="nameHome" onclick="changeHomeName()">Home</legend>
-                <div class="scoreBg">
-                    <p id="scoreHome">0</p>
-                </div>
-            </fieldset>
-        </div>
-        <div class="mainGrid score away">
-            <fieldset>
-                <legend id="nameAway" onclick="changeAwayName()">Away</legend>
-                <div class="scoreBg">
-                    <p id="scoreAway">0</p>
-                </div>
-            </fieldset>
-        </div>
-        <div class="mainGrid points homePoints">
-            <button id="point1" class="point" onclick="pointHome1()">+1</button>
-            <button id="point2" class="point" onclick="pointHome2()">+2</button>
-            <button id="point3" class="point" onclick="pointHome3()">+3</button>
-        </div>
-        <div class="mainGrid points awayPoints" >
-            <button id="point1" class="point" onclick="pointAway1()">+1</button>
-            <button id="point2" class="point" onclick="pointAway2()">+2</button>
-            <button id="point3" class="point" onclick="pointAway3()">+3</button>
-        </div>
-        <div class="mainGrid reset">
-            <button id="reset" onclick="reset()">Reset</button>
-        </div>
+      <div class="mainGrid score home">
+        <fieldset>
+          <legend id="nameHome" onclick="changeHomeName()">Home</legend>
+          <div class="scoreBg">
+            <p id="scoreHome">0</p>
+          </div>
+        </fieldset>
+      </div>
+      <div class="mainGrid score away">
+        <fieldset>
+          <legend id="nameAway" onclick="changeAwayName()">Away</legend>
+          <div class="scoreBg">
+            <p id="scoreAway">0</p>
+          </div>
+        </fieldset>
+      </div>
+      <div class="mainGrid points homePoints">
+        <button id="point1" class="point" onclick="pointHome1()">+1</button>
+        <button id="point2" class="point" onclick="pointHome2()">+2</button>
+        <button id="point3" class="point" onclick="pointHome3()">+3</button>
+      </div>
+      <div class="mainGrid points awayPoints">
+        <button id="point1" class="point" onclick="pointAway1()">+1</button>
+        <button id="point2" class="point" onclick="pointAway2()">+2</button>
+        <button id="point3" class="point" onclick="pointAway3()">+3</button>
+      </div>
+      <div class="mainGrid reset">
+        <!-- <div>
+          <img id="homeLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Hamburg_Towers_Logo.svg/1200px-Hamburg_Towers_Logo.svg.png" alt="" />
+        </div> -->
+        <button id="reset" onclick="reset()">Reset</button>
+        <!-- <div>
+          <img id="awayLogo" src="https://www.basketball-loewen.de/wp-content/uploads/2020/12/cropped-loewe.png" alt="" />
+        </div> -->
+      </div>
+      <!-- <button class="changeImg" onclick="changeHomeImg()">BILD ÄNDERN</button>
+      <button class="changeImg" onclick="changeAwayImg()">BILD ÄNDERN</button> -->
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>

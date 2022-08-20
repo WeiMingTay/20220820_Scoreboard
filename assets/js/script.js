@@ -1,29 +1,30 @@
 // Namen ändern
 
 function changeHomeName() {
-    let HomeName = prompt("Change Home Name to", "Hamburg Towers")
-    if (HomeName != null) {
-        document.getElementById("nameHome").innerText=HomeName;
-    }
+  let HomeName = prompt("Change Home Name to", "Hamburg Towers");
+  if (HomeName != null) {
+    document.getElementById("nameHome").innerText = HomeName;
+  }
 }
 function changeAwayName() {
-    let AwayName = prompt("Change Away Name to", "Chicago")
-    if (AwayName != null) {
-        document.getElementById("nameAway").innerText=AwayName;
-    }
+  let AwayName = prompt("Change Away Name to", "Chicago");
+  if (AwayName != null) {
+    document.getElementById("nameAway").innerText = AwayName;
+  }
 }
 
 // =========================================
 
 // Freiwürfe
 function pointHome1() {
-  var einenPunkt = Number(document.getElementById("scoreHome").innerHTML);
+  let einenPunkt = Number(document.getElementById("scoreHome").innerHTML);
+
   einenPunkt += 1;
 
   document.getElementById("scoreHome").innerHTML = einenPunkt;
 }
 function pointAway1() {
-  var einenPunkt = Number(document.getElementById("scoreAway").innerHTML);
+  let einenPunkt = Number(document.getElementById("scoreAway").innerHTML);
   einenPunkt += 1;
 
   document.getElementById("scoreAway").innerHTML = einenPunkt;
@@ -65,7 +66,20 @@ function pointAway3() {
 
 // Reset
 function reset() {
-    document.getElementById("scoreHome").innerHTML = 0;
+  document.getElementById("scoreHome").innerHTML = 0;
+  document.getElementById("scoreAway").innerHTML = 0;
 
-    document.getElementById("scoreAway").innerHTML = 0;
+  document.getElementById("nameHome").innerHTML="Home"
+  document.getElementById("nameAway").innerHTML="Away"
 }
+
+// =========================================
+
+//Team Logos
+/* function changeHomeImg() {
+  document.getElementById("homeLogo").style.display = "block";
+}
+
+function changeAwayImg() {
+    document.getElementById("awayLogo").style.display = "block";
+  } */
