@@ -20,7 +20,10 @@ Allgemein
     box-sizing: border-box;
 }
 body {
-    background-color: orange;
+    background-color: #621C22;
+    background-image: url(../img/photo-1558648243-33c2ca3bf161.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Orbitron;
     padding: 3vh 10vw 0 10vw;
 }
@@ -58,7 +61,7 @@ legend {
 .scoreBg {
     background-color: #000000;
     border-radius: 30px;
-    margin: 20px;
+    margin: 1.7rem 1.7rem 5rem 1.7rem;
 }
 .score p {
     padding: 20%;
@@ -70,6 +73,10 @@ legend {
 }
 .away fieldset {
     border-color: #525DF4;
+}
+/* --- Name ändern --- */
+legend:hover::after {
+    content: " 📝";
 }
 /* === Points === */
 .points {
@@ -88,6 +95,9 @@ legend {
     padding: 20px;
     border-radius: 20%;
 }
+.point:hover {
+    scale: 1.1;
+}
 .homePoints button{
     background-color: #97F5BB;
 }
@@ -100,7 +110,8 @@ legend {
     grid-column: 1/ span 2;
 }
 .reset button {
-    margin-bottom: 1%;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
     padding: .6rem 3rem;
     background-color: #fff;
     border: none;

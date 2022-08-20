@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basketball Score</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/721ed2b8-e5b3-4636-b2c9-64df4735261b.jpeg">
 </head>
 <body>
     <header>
@@ -14,7 +15,7 @@
     <main>
         <div class="mainGrid score home">
             <fieldset>
-                <legend onclick="changeHomeName()">Home</legend>
+                <legend id="nameHome" onclick="changeHomeName()">Home</legend>
                 <div class="scoreBg">
                     <p id="scoreHome">0</p>
                 </div>
@@ -22,7 +23,7 @@
         </div>
         <div class="mainGrid score away">
             <fieldset>
-                <legend onclick="changeAwayName()">Away</legend>
+                <legend id="nameAway" onclick="changeAwayName()">Away</legend>
                 <div class="scoreBg">
                     <p id="scoreAway">0</p>
                 </div>
