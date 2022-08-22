@@ -14,7 +14,7 @@
   <body>
     <header><H1>Basketball Scoreboard</H1></header>
     <main>
-      <div class="mainGrid score home">
+      <div class="score home">
         <fieldset>
           <legend id="nameHome" onclick="changeHomeName()">Home</legend>
           <div class="scoreBg">
@@ -22,7 +22,7 @@
           </div>
         </fieldset>
       </div>
-      <div class="mainGrid score away">
+      <div class="score away">
         <fieldset>
           <legend id="nameAway" onclick="changeAwayName()">Away</legend>
           <div class="scoreBg">
@@ -30,17 +30,17 @@
           </div>
         </fieldset>
       </div>
-      <div class="mainGrid points homePoints">
+      <div class="points homePoints">
         <button id="point1" class="point" onclick="pointHome1()">+1</button>
         <button id="point2" class="point" onclick="pointHome2()">+2</button>
         <button id="point3" class="point" onclick="pointHome3()">+3</button>
       </div>
-      <div class="mainGrid points awayPoints">
+      <div class="points awayPoints">
         <button id="point1" class="point" onclick="pointAway1()">+1</button>
         <button id="point2" class="point" onclick="pointAway2()">+2</button>
         <button id="point3" class="point" onclick="pointAway3()">+3</button>
       </div>
-      <div class="mainGrid reset">
+      <div class="reset">
         <!-- <div>
           <img id="homeLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Hamburg_Towers_Logo.svg/1200px-Hamburg_Towers_Logo.svg.png" alt="" />
         </div> -->
@@ -52,7 +52,9 @@
       <!-- <button class="changeImg" onclick="changeHomeImg()">BILD ÄNDERN</button>
       <button class="changeImg" onclick="changeAwayImg()">BILD ÄNDERN</button> -->
     </main>
-    <footer></footer>
+    <footer>
+      <div id="fliesstext"></div>
+    </footer>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

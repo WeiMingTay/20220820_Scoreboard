@@ -2,26 +2,23 @@
 
 function changeHomeName() {
   let HomeName = prompt("Change Home Name to", "Hamburg Towers");
-  if (HomeName != null) {
-    document.getElementById("nameHome").innerText = HomeName;
-  }
+  document.getElementById("nameHome").innerText = HomeName;
+  
 }
 function changeAwayName() {
   let AwayName = prompt("Change Away Name to", "Chicago");
-  if (AwayName != null) {
     document.getElementById("nameAway").innerText = AwayName;
-  }
 }
 
 // =========================================
 
+// Variablen
+let scoreHome = 0
+
 // Freiwürfe
 function pointHome1() {
-  let einenPunkt = Number(document.getElementById("scoreHome").innerHTML);
-
-  einenPunkt += 1;
-
-  document.getElementById("scoreHome").innerHTML = einenPunkt;
+  scoreHome += 1;
+  document.getElementById("scoreHome").innerHTML = scoreHome;
 }
 function pointAway1() {
   let einenPunkt = Number(document.getElementById("scoreAway").innerHTML);
@@ -34,10 +31,8 @@ function pointAway1() {
 
 // 2 Punkt Wurf
 function pointHome2() {
-  var zweiPunkte = Number(document.getElementById("scoreHome").innerHTML);
-  zweiPunkte += 2;
-
-  document.getElementById("scoreHome").innerHTML = zweiPunkte;
+  scoreHome += 2;
+  document.getElementById("scoreHome").innerHTML = scoreHome;
 }
 function pointAway2() {
   var zweiPunkte = Number(document.getElementById("scoreAway").innerHTML);
@@ -50,10 +45,8 @@ function pointAway2() {
 
 // 3 Punkt Wurf
 function pointHome3() {
-  var dreiPunkte = Number(document.getElementById("scoreHome").innerHTML);
-  dreiPunkte += 3;
-
-  document.getElementById("scoreHome").innerHTML = dreiPunkte;
+  scoreHome += 3;
+  document.getElementById("scoreHome").innerHTML = scoreHome;
 }
 function pointAway3() {
   var dreiPunkte = Number(document.getElementById("scoreAway").innerHTML);
@@ -83,3 +76,7 @@ function reset() {
 function changeAwayImg() {
     document.getElementById("awayLogo").style.display = "block";
   } */
+
+  // =========================================
+
+  fliesstext.innerHTML = `hier ist Fließtext mit Variablen... Spiel ${scoreHome} gegen ${nameAway}!`

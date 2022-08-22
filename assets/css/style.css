@@ -157,3 +157,6 @@ legend:hover::after {
 .changeImg {
     display: none;
 } */
+#fliesstext {
+    color: red;
+}
