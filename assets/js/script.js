@@ -69,8 +69,8 @@ function reset() {
   document.getElementById("scoreHome").innerHTML = 0;
   document.getElementById("scoreAway").innerHTML = 0;
 
-  document.getElementById("nameHome").innerHTML="Home"
-  document.getElementById("nameAway").innerHTML="Away"
+  document.getElementById("nameHome").innerHTML = "Home";
+  document.getElementById("nameAway").innerHTML = "Away";
 }
 
 // =========================================
