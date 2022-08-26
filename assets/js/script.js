@@ -1,5 +1,4 @@
 // Namen ändern
-
 function changeHomeName() {
   let HomeName = prompt("Change Home Name to", "Hamburg Towers");
   document.getElementById("nameHome").innerText = HomeName;
@@ -9,11 +8,14 @@ function changeAwayName() {
   let AwayName = prompt("Change Away Name to", "Chicago");
     document.getElementById("nameAway").innerText = AwayName;
 }
-
+console.log(nameHome);
 // =========================================
 
 // Variablen
 let scoreHome = 0
+console.log("scoreHome: "+scoreHome);
+let scoreAway = 0
+console.log("scoreAway: "+scoreAway);
 
 // Freiwürfe
 function pointHome1() {
@@ -26,7 +28,6 @@ function pointAway1() {
 
   document.getElementById("scoreAway").innerHTML = einenPunkt;
 }
-
 // =================
 
 // 2 Punkt Wurf
