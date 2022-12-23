@@ -1,162 +1,157 @@
 /* Fonts: Orbitron, Lato
-Farben: #2C2C2C, #FDF860, #000000, #FFFFFF, #97F5BB, #525DF4
  */
+:root {
+	--homeColour: #97f5bb;
+	--awayColour: #525df4;
 
+	--scoreColour: #fdf860;
+
+	--bgColour: #2c2c2c;
+	--darkColour: #000;
+	--lightColour: #fff;
+}
 /* fonts */
 @font-face {
-    font-family: Orbitron;
-    src: url(../fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
+	font-family: Orbitron;
+	src: url(../fonts/Orbitron/Orbitron-VariableFont_wght.ttf);
 }
 @font-face {
-    font-family: Lato;
-    src: url(../fonts/Lato/Lato-Regular.ttf);
+	font-family: Lato;
+	src: url(../fonts/Lato/Lato-Regular.ttf);
 }
 /* ====================
 Allgemein
 ==================== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 body {
-    background-color: #621C22;
-    background-image: url(../img/photo-1558648243-33c2ca3bf161.avif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: Orbitron;
-    padding: 3vh 10vw 0 10vw;
+	background-color: #3f4b4b;
+	background-image: url(../img/photo-1558648243-33c2ca3bf161.avif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Orbitron;
+	padding: 3vh 10vw 0 10vw;
 }
 /* ====================
 Header
 ==================== */
 h1 {
-    display: none;
+	display: none;
 }
 /* ====================
 MainGrid
 ==================== */
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    grid-column: 2/ span 2;
-    gap: 10px;
-    background-color: #2c2c2c;
-    color: #fff;
-    /* border: 30px solid red; */
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: center;
+	grid-column: 2 / span 2;
+	gap: 10px;
+	background-color: var(--bgColour);
+	color: var(--lightColour);
 }
 /* === MainScore */
 .score {
-    font-size: 6rem;
-    padding: 10%;
+	font-size: 6rem;
+	padding: 10%;
 }
 fieldset {
-    position: relative;
-    border-radius: 30px;
-    border: 5px solid #fff;
+	position: relative;
+	border-radius: 30px;
+	border: 5px solid var(--lightColour);
 }
 legend {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translate( -50%);
-    font-size: 2rem;
-    background-color: #2c2c2c;
-    padding: 0 10px;
-    cursor: pointer;
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 2rem;
+	background-color: var(--bgColour);
+	padding: 0 10px;
+	cursor: pointer;
 }
 .scoreBg {
-    background-color: #000000;
-    border-radius: 30px;
-    margin: 1.7rem 1.7rem 5rem 1.7rem;
+	background-color: var(--darkColour);
+	border-radius: 30px;
+	margin: 1.7rem 1.7rem 5rem 1.7rem;
 }
 .score p {
-    padding: 20%;
-    color: #FDF860;
-    
+	padding: 20%;
+	color: var(--scoreColour);
 }
-.home fieldset{
-    border-color: #97F5BB;
+.home fieldset {
+	border-color: var(--homeColour);
 }
 .away fieldset {
-    border-color: #525DF4;
+	border-color: var(--awayColour);
 }
 /* --- Name ändern --- */
 legend:hover::after {
-    content: " 📝";
+	content: " 📝";
 }
 /* === Points === */
 .points {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 .points button {
-    font-family: Lato;
-    font-size: 2rem;
-    padding: .3rem 1rem;
-    color: #fff;
+	font-family: Lato;
+	font-size: 2rem;
+	padding: 0.3rem 1rem;
+	color: var(--lightColour);
 }
 .point {
-    background-color: aqua;
-    margin: 0 20px;
-    padding: 20px;
-    border-radius: 20%;
-    cursor: pointer ;
+	margin: 0 20px;
+	padding: 20px;
+	border-radius: 20%;
+	cursor: pointer;
 }
 .point:hover {
-    scale: 1.1;
-
+	scale: 1.1;
 }
 .homePoints .point:hover {
-    box-shadow: -10px 10px 15px -2px black;
+	box-shadow: -10px 10px 15px -2px var(--darkColour);
 }
 .awayPoints .point:hover {
-    box-shadow: 10px 10px 15px -2px black;
+	box-shadow: 10px 10px 15px -2px var(--darkColour);
 }
-.homePoints button{
-    background-color: #97F5BB;
+.homePoints button {
+	background-color: var(--homeColour);
 }
-.awayPoints button{
-    background-color: #525DF4;
+.awayPoints button {
+	background-color: var(--awayColour);
 }
 /* === RESET === */
 .reset {
-    grid-template-columns: span 2;
-    grid-column: 1/ span 2;
-    display: flex;
-    justify-content: space-around;
+	grid-template-columns: span 2;
+	grid-column: 1 / span 2;
+	display: flex;
+	justify-content: space-around;
 }
 .reset button {
-    margin-top: 5vh;
-    margin-bottom: 3vh;
-    padding: 0rem 3rem 1rem 3rem;
-    background-color: #fff;
-    color: #fff;
-    font-size: 2rem;
-    text-shadow: 3px 2px #000000;
-    border: none;
-    border-radius: 12px;
-    font-family: Lato;
-    background-image: url(../img/photo-1627627256672-027a4613d028.avif);
-    background-size: cover;
-    background-position: top;
-    cursor: pointer;
+	margin-top: 5vh;
+	margin-bottom: 3vh;
+	padding: 0rem 3rem 1rem 3rem;
+	background-color: var(--lightColour);
+	color: var(--lightColour);
+	font-size: 2rem;
+	text-shadow: 3px 2px var(--darkColour);
+	border: none;
+	border-radius: 12px;
+	font-family: inherit;
+	background-image: url(../img/photo-1627627256672-027a4613d028.avif);
+	background-size: cover;
+	background-position: top;
+	cursor: pointer;
 }
 .reset button:hover {
-    scale: 1.3; 
-    box-shadow: 0 10px 15px -2px black;
+	scale: 1.3;
+	box-shadow: 0 10px 15px -2px var(--darkColour);
 }
-/* === images === */
-/* .reset img {
-    width: 200px;
-    max-height: 200px;
-    margin: 1rem 0;
-    display: none;
-}
-.changeImg {
-    display: none;
+
+/* #fliesstext {
+	color: red;
 } */
-#fliesstext {
-    color: red;
-}

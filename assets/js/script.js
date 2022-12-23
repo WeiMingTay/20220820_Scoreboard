@@ -80,4 +80,4 @@ function changeAwayImg() {
 
   // =========================================
 
-  fliesstext.innerHTML = `hier ist Fließtext mit Variablen... Spiel ${scoreHome} gegen ${nameAway}!`
+/*   fliesstext.innerHTML = `hier ist Fließtext mit Variablen... Spiel ${HomeName} gegen ${nameAway.innerHTML}!` */
